@@ -68,4 +68,4 @@ program: $(EXEC)
 	./$(EXEC)
 
 clean:                                                     
-	rm -f *.o  *~ *.a *.so *.x core core* a.out; rm -rf ${LIB_DIR}
+	rm -f *.o *.x
