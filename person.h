@@ -16,7 +16,10 @@ class Person
         std::string status;
 
     public:
+
     virtual unsigned int getid() = 0;
+
+    virtual ~Person() {}
 
     virtual void wyswietl(Screen*) = 0;
 };

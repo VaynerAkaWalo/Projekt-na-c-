@@ -14,6 +14,10 @@ class Staff : public Person
     public:
     Staff(int, std::string, std::string, std::string, std::string);
 
+    Staff(Staff &);
+
+    virtual ~Staff() {}
+
     unsigned int getid();
 
     void wyswietl(Screen*);

@@ -12,6 +12,15 @@ Student::Student(int id, std::string name, std::string lastname, std::string sta
     this->group = group;
 }
 
+Student::Student(Student &other)
+{
+    this->id  = other.id;
+    this->name = other.name;
+    this->lastname = other.lastname;
+    this->status = other.status;
+    this->group = other.group;
+}
+
 void Student::wyswietl(Screen* screen)
 {
     std::cout.width(screen->gettableIDsize());

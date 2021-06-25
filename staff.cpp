@@ -12,6 +12,15 @@ Staff::Staff(int id, std::string name, std::string lastname, std::string status,
     this->role = role;
 }
 
+Staff::Staff(Staff &other)
+{
+    this->id  = other.id;
+    this->name = other.name;
+    this->lastname = other.lastname;
+    this->status = other.status;
+    this->role = other.role;
+}
+
 void Staff::wyswietl(Screen* screen)
 {
     std::cout.width(screen->gettableIDsize());

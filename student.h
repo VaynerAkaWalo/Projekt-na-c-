@@ -15,6 +15,10 @@ class Student : public Person
     public:
     Student(int, std::string, std::string, std::string, std::string);
 
+    Student(Student &);
+
+    virtual ~Student() {}
+
     unsigned int getid();
     
     void wyswietl(Screen*);

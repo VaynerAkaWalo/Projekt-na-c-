@@ -12,6 +12,15 @@ Teacher::Teacher(int id, std::string name, std::string lastname, std::string sta
     this->subject = subject;
 }
 
+Teacher::Teacher(Teacher &other)
+{
+    this->id  = other.id;
+    this->name = other.name;
+    this->lastname = other.lastname;
+    this->status = other.status;
+    this->subject = other.subject;
+}
+
 void Teacher::wyswietl(Screen* screen)
 {
     std::cout.width(screen->gettableIDsize());

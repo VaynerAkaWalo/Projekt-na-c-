@@ -14,6 +14,10 @@ class Teacher : public Person
     public:
     Teacher(int, std::string, std::string, std::string, std::string);
 
+    Teacher(Teacher &);
+
+    virtual ~Teacher() {}
+
     unsigned int getid();
 
     void wyswietl(Screen*);
